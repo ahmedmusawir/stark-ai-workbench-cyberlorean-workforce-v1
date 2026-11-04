@@ -1,0 +1,1781 @@
+[
+  {
+    "role": "Web Architect",
+    "profile_id": "web_architect_agent",
+    "profile_dir": "~/.hermes/profiles/web_architect_agent",
+    "port": "9911",
+    "model": "gpt-6-astra",
+    "provider": "openai-codex",
+    "workspace": "/home/moose/.hermes/profiles/web_architect_agent/workspace",
+    "instruction_entry": [
+      "~/.hermes/profiles/web_architect_agent/SOUL.md",
+      "~/.hermes/profiles/web_architect_agent/workspace/.hermes.md"
+    ],
+    "starter_parts": [
+      "ARCHITECT_AGENT/WEB_ARCHITECT_INSTRUCTIONS_v1_0.md",
+      "ARCHITECT_AGENT/WEB_ARCHITECT_PLAYBOOK_v1_0.md",
+      "CONSTITUTION/WBM_PLAYBOOK_v1_0.md",
+      "README.md"
+    ],
+    "custom_skills": [
+      "web-factory/wbm-assembly"
+    ],
+    "upstream_skills": [
+      {
+        "skill": "apple/apple-notes",
+        "upstream": "skills/apple/apple-notes"
+      },
+      {
+        "skill": "apple/apple-reminders",
+        "upstream": "skills/apple/apple-reminders"
+      },
+      {
+        "skill": "apple/findmy",
+        "upstream": "skills/apple/findmy"
+      },
+      {
+        "skill": "apple/imessage",
+        "upstream": "skills/apple/imessage"
+      },
+      {
+        "skill": "autonomous-ai-agents/claude-code",
+        "upstream": "skills/autonomous-ai-agents/claude-code"
+      },
+      {
+        "skill": "autonomous-ai-agents/codex",
+        "upstream": "skills/autonomous-ai-agents/codex"
+      },
+      {
+        "skill": "autonomous-ai-agents/computer-use",
+        "upstream": "skills/autonomous-ai-agents/computer-use"
+      },
+      {
+        "skill": "autonomous-ai-agents/hermes-agent",
+        "upstream": "skills/autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "skill": "autonomous-ai-agents/merge-reconciler",
+        "upstream": "skills/autonomous-ai-agents/merge-reconciler"
+      },
+      {
+        "skill": "autonomous-ai-agents/opencode",
+        "upstream": "skills/autonomous-ai-agents/opencode"
+      },
+      {
+        "skill": "creative/architecture-diagram",
+        "upstream": "skills/creative/architecture-diagram"
+      },
+      {
+        "skill": "creative/ascii-art",
+        "upstream": "skills/creative/ascii-art"
+      },
+      {
+        "skill": "creative/ascii-video",
+        "upstream": "skills/creative/ascii-video"
+      },
+      {
+        "skill": "creative/baoyu-infographic",
+        "upstream": "skills/creative/baoyu-infographic"
+      },
+      {
+        "skill": "creative/claude-design",
+        "upstream": "skills/creative/claude-design"
+      },
+      {
+        "skill": "creative/comfyui",
+        "upstream": "skills/creative/comfyui"
+      },
+      {
+        "skill": "creative/design-md",
+        "upstream": "skills/creative/design-md"
+      },
+      {
+        "skill": "creative/excalidraw",
+        "upstream": "skills/creative/excalidraw"
+      },
+      {
+        "skill": "creative/humanizer",
+        "upstream": "skills/creative/humanizer"
+      },
+      {
+        "skill": "creative/manim-video",
+        "upstream": "skills/creative/manim-video"
+      },
+      {
+        "skill": "creative/p5js",
+        "upstream": "skills/creative/p5js"
+      },
+      {
+        "skill": "creative/popular-web-designs",
+        "upstream": "skills/creative/popular-web-designs"
+      },
+      {
+        "skill": "creative/pretext",
+        "upstream": "skills/creative/pretext"
+      },
+      {
+        "skill": "creative/sketch",
+        "upstream": "skills/creative/sketch"
+      },
+      {
+        "skill": "creative/songwriting-and-ai-music",
+        "upstream": "skills/creative/songwriting-and-ai-music"
+      },
+      {
+        "skill": "creative/touchdesigner-mcp",
+        "upstream": "skills/creative/touchdesigner-mcp"
+      },
+      {
+        "skill": "devops/sdlc-review",
+        "upstream": "skills/devops/sdlc-review"
+      },
+      {
+        "skill": "email/email-inbox-triage",
+        "upstream": "skills/email/email-inbox-triage"
+      },
+      {
+        "skill": "email/himalaya",
+        "upstream": "skills/email/himalaya"
+      },
+      {
+        "skill": "github/codebase-inspection",
+        "upstream": "skills/github/codebase-inspection"
+      },
+      {
+        "skill": "github/github-auth",
+        "upstream": "skills/github/github-auth"
+      },
+      {
+        "skill": "github/github-code-review",
+        "upstream": "skills/github/github-code-review"
+      },
+      {
+        "skill": "github/github-issue-to-pr",
+        "upstream": "skills/github/github-issue-to-pr"
+      },
+      {
+        "skill": "github/github-issues",
+        "upstream": "skills/github/github-issues"
+      },
+      {
+        "skill": "github/github-pr-workflow",
+        "upstream": "skills/github/github-pr-workflow"
+      },
+      {
+        "skill": "github/github-repo-management",
+        "upstream": "skills/github/github-repo-management"
+      },
+      {
+        "skill": "media/gif-search",
+        "upstream": "skills/media/gif-search"
+      },
+      {
+        "skill": "media/songsee",
+        "upstream": "skills/media/songsee"
+      },
+      {
+        "skill": "media/youtube-content",
+        "upstream": "skills/media/youtube-content"
+      },
+      {
+        "skill": "mlops/evaluation/evaluating-llms-harness",
+        "upstream": "skills/mlops/evaluation/evaluating-llms-harness"
+      },
+      {
+        "skill": "mlops/evaluation/weights-and-biases",
+        "upstream": "skills/mlops/evaluation/weights-and-biases"
+      },
+      {
+        "skill": "mlops/huggingface-hub",
+        "upstream": "skills/mlops/huggingface-hub"
+      },
+      {
+        "skill": "mlops/inference/llama-cpp",
+        "upstream": "skills/mlops/inference/llama-cpp"
+      },
+      {
+        "skill": "mlops/inference/serving-llms-vllm",
+        "upstream": "skills/mlops/inference/serving-llms-vllm"
+      },
+      {
+        "skill": "note-taking/obsidian",
+        "upstream": "skills/note-taking/obsidian"
+      },
+      {
+        "skill": "productivity/airtable",
+        "upstream": "skills/productivity/airtable"
+      },
+      {
+        "skill": "productivity/box",
+        "upstream": "skills/productivity/box"
+      },
+      {
+        "skill": "productivity/document-to-action-items",
+        "upstream": "skills/productivity/document-to-action-items"
+      },
+      {
+        "skill": "productivity/docx",
+        "upstream": "skills/productivity/docx"
+      },
+      {
+        "skill": "productivity/google-workspace",
+        "upstream": "skills/productivity/google-workspace"
+      },
+      {
+        "skill": "productivity/maps",
+        "upstream": "skills/productivity/maps"
+      },
+      {
+        "skill": "productivity/meeting-action-items",
+        "upstream": "skills/productivity/meeting-action-items"
+      },
+      {
+        "skill": "productivity/nano-pdf",
+        "upstream": "skills/productivity/nano-pdf"
+      },
+      {
+        "skill": "productivity/notion",
+        "upstream": "skills/productivity/notion"
+      },
+      {
+        "skill": "productivity/ocr-and-documents",
+        "upstream": "skills/productivity/ocr-and-documents"
+      },
+      {
+        "skill": "productivity/pdf",
+        "upstream": "skills/productivity/pdf"
+      },
+      {
+        "skill": "productivity/powerpoint",
+        "upstream": "skills/productivity/powerpoint"
+      },
+      {
+        "skill": "productivity/product-price-monitor",
+        "upstream": "skills/productivity/product-price-monitor"
+      },
+      {
+        "skill": "productivity/session-librarian",
+        "upstream": "skills/productivity/session-librarian"
+      },
+      {
+        "skill": "productivity/teams-meeting-pipeline",
+        "upstream": "skills/productivity/teams-meeting-pipeline"
+      },
+      {
+        "skill": "productivity/weekly-review-planning",
+        "upstream": "skills/productivity/weekly-review-planning"
+      },
+      {
+        "skill": "productivity/xlsx",
+        "upstream": "skills/productivity/xlsx"
+      },
+      {
+        "skill": "research/arxiv",
+        "upstream": "skills/research/arxiv"
+      },
+      {
+        "skill": "research/blocked-page-recovery",
+        "upstream": "skills/research/blocked-page-recovery"
+      },
+      {
+        "skill": "research/blogwatcher",
+        "upstream": "skills/research/blogwatcher"
+      },
+      {
+        "skill": "research/competitor-news-monitor",
+        "upstream": "skills/research/competitor-news-monitor"
+      },
+      {
+        "skill": "research/grounded-citations",
+        "upstream": "skills/research/grounded-citations"
+      },
+      {
+        "skill": "research/llm-wiki",
+        "upstream": "skills/research/llm-wiki"
+      },
+      {
+        "skill": "research/research-paper-writing",
+        "upstream": "skills/research/research-paper-writing"
+      },
+      {
+        "skill": "smart-home/openhue",
+        "upstream": "skills/smart-home/openhue"
+      },
+      {
+        "skill": "social-media/xurl",
+        "upstream": "skills/social-media/xurl"
+      },
+      {
+        "skill": "software-development/dogfood",
+        "upstream": "skills/software-development/dogfood"
+      },
+      {
+        "skill": "software-development/hermes-agent-skill-authoring",
+        "upstream": "skills/software-development/hermes-agent-skill-authoring"
+      },
+      {
+        "skill": "software-development/inspecting-hermes-desktop-dom",
+        "upstream": "skills/software-development/inspecting-hermes-desktop-dom"
+      },
+      {
+        "skill": "software-development/node-inspect-debugger",
+        "upstream": "skills/software-development/node-inspect-debugger"
+      },
+      {
+        "skill": "software-development/plan",
+        "upstream": "skills/software-development/plan"
+      },
+      {
+        "skill": "software-development/python-debugpy",
+        "upstream": "skills/software-development/python-debugpy"
+      },
+      {
+        "skill": "software-development/requesting-code-review",
+        "upstream": "skills/software-development/requesting-code-review"
+      },
+      {
+        "skill": "software-development/simplify-code",
+        "upstream": "skills/software-development/simplify-code"
+      },
+      {
+        "skill": "software-development/spike",
+        "upstream": "skills/software-development/spike"
+      },
+      {
+        "skill": "software-development/systematic-debugging",
+        "upstream": "skills/software-development/systematic-debugging"
+      },
+      {
+        "skill": "software-development/test-driven-development",
+        "upstream": "skills/software-development/test-driven-development"
+      }
+    ],
+    "launcher": "A2A_PORT=9911 hermes -p web_architect_agent gateway run --replace  (via ~/.hermes/scripts/start_web_architect_agent.sh)",
+    "adk_app": "/home/moose/python/stark-ai-workbench-adk-backend-v1/web_architect_agent/agent.py",
+    "adk_agent_sha256": "9ca601ba5f9b05073e771c3882347d0ea71e5a5f19711072ebef71f8676049ab"
+  },
+  {
+    "role": "Web Designer",
+    "profile_id": "web_designer_agent",
+    "profile_dir": "~/.hermes/profiles/web_designer_agent",
+    "port": "9912",
+    "model": "minimax-m3:cloud",
+    "provider": "custom:ollama-launch",
+    "workspace": "/home/moose/.hermes/profiles/web_designer_agent/workspace",
+    "instruction_entry": [
+      "~/.hermes/profiles/web_designer_agent/SOUL.md",
+      "~/.hermes/profiles/web_designer_agent/workspace/.hermes.md"
+    ],
+    "starter_parts": [
+      "CONSTITUTION/WBM_PLAYBOOK_v1_0.md",
+      "DESIGNER_AGENT/WEB_DESIGNER_INSTRUCTIONS_v1_0.md",
+      "DESIGNER_AGENT/WEB_DESIGNER_PLAYBOOK_v1_0.md",
+      "README.md"
+    ],
+    "custom_skills": [
+      "software-development/html-prototype-render-qa"
+    ],
+    "upstream_skills": [
+      {
+        "skill": "apple/apple-notes",
+        "upstream": "skills/apple/apple-notes"
+      },
+      {
+        "skill": "apple/apple-reminders",
+        "upstream": "skills/apple/apple-reminders"
+      },
+      {
+        "skill": "apple/findmy",
+        "upstream": "skills/apple/findmy"
+      },
+      {
+        "skill": "apple/imessage",
+        "upstream": "skills/apple/imessage"
+      },
+      {
+        "skill": "autonomous-ai-agents/claude-code",
+        "upstream": "skills/autonomous-ai-agents/claude-code"
+      },
+      {
+        "skill": "autonomous-ai-agents/codex",
+        "upstream": "skills/autonomous-ai-agents/codex"
+      },
+      {
+        "skill": "autonomous-ai-agents/computer-use",
+        "upstream": "skills/autonomous-ai-agents/computer-use"
+      },
+      {
+        "skill": "autonomous-ai-agents/hermes-agent",
+        "upstream": "skills/autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "skill": "autonomous-ai-agents/merge-reconciler",
+        "upstream": "skills/autonomous-ai-agents/merge-reconciler"
+      },
+      {
+        "skill": "autonomous-ai-agents/opencode",
+        "upstream": "skills/autonomous-ai-agents/opencode"
+      },
+      {
+        "skill": "creative/architecture-diagram",
+        "upstream": "skills/creative/architecture-diagram"
+      },
+      {
+        "skill": "creative/ascii-art",
+        "upstream": "skills/creative/ascii-art"
+      },
+      {
+        "skill": "creative/ascii-video",
+        "upstream": "skills/creative/ascii-video"
+      },
+      {
+        "skill": "creative/baoyu-infographic",
+        "upstream": "skills/creative/baoyu-infographic"
+      },
+      {
+        "skill": "creative/claude-design",
+        "upstream": "skills/creative/claude-design"
+      },
+      {
+        "skill": "creative/comfyui",
+        "upstream": "skills/creative/comfyui"
+      },
+      {
+        "skill": "creative/design-md",
+        "upstream": "skills/creative/design-md"
+      },
+      {
+        "skill": "creative/excalidraw",
+        "upstream": "skills/creative/excalidraw"
+      },
+      {
+        "skill": "creative/humanizer",
+        "upstream": "skills/creative/humanizer"
+      },
+      {
+        "skill": "creative/manim-video",
+        "upstream": "skills/creative/manim-video"
+      },
+      {
+        "skill": "creative/p5js",
+        "upstream": "skills/creative/p5js"
+      },
+      {
+        "skill": "creative/popular-web-designs",
+        "upstream": "skills/creative/popular-web-designs"
+      },
+      {
+        "skill": "creative/pretext",
+        "upstream": "skills/creative/pretext"
+      },
+      {
+        "skill": "creative/sketch",
+        "upstream": "skills/creative/sketch"
+      },
+      {
+        "skill": "creative/songwriting-and-ai-music",
+        "upstream": "skills/creative/songwriting-and-ai-music"
+      },
+      {
+        "skill": "creative/touchdesigner-mcp",
+        "upstream": "skills/creative/touchdesigner-mcp"
+      },
+      {
+        "skill": "devops/sdlc-review",
+        "upstream": "skills/devops/sdlc-review"
+      },
+      {
+        "skill": "email/email-inbox-triage",
+        "upstream": "skills/email/email-inbox-triage"
+      },
+      {
+        "skill": "email/himalaya",
+        "upstream": "skills/email/himalaya"
+      },
+      {
+        "skill": "github/codebase-inspection",
+        "upstream": "skills/github/codebase-inspection"
+      },
+      {
+        "skill": "github/github-auth",
+        "upstream": "skills/github/github-auth"
+      },
+      {
+        "skill": "github/github-code-review",
+        "upstream": "skills/github/github-code-review"
+      },
+      {
+        "skill": "github/github-issue-to-pr",
+        "upstream": "skills/github/github-issue-to-pr"
+      },
+      {
+        "skill": "github/github-issues",
+        "upstream": "skills/github/github-issues"
+      },
+      {
+        "skill": "github/github-pr-workflow",
+        "upstream": "skills/github/github-pr-workflow"
+      },
+      {
+        "skill": "github/github-repo-management",
+        "upstream": "skills/github/github-repo-management"
+      },
+      {
+        "skill": "media/gif-search",
+        "upstream": "skills/media/gif-search"
+      },
+      {
+        "skill": "media/songsee",
+        "upstream": "skills/media/songsee"
+      },
+      {
+        "skill": "media/youtube-content",
+        "upstream": "skills/media/youtube-content"
+      },
+      {
+        "skill": "mlops/evaluation/evaluating-llms-harness",
+        "upstream": "skills/mlops/evaluation/evaluating-llms-harness"
+      },
+      {
+        "skill": "mlops/evaluation/weights-and-biases",
+        "upstream": "skills/mlops/evaluation/weights-and-biases"
+      },
+      {
+        "skill": "mlops/huggingface-hub",
+        "upstream": "skills/mlops/huggingface-hub"
+      },
+      {
+        "skill": "mlops/inference/llama-cpp",
+        "upstream": "skills/mlops/inference/llama-cpp"
+      },
+      {
+        "skill": "mlops/inference/serving-llms-vllm",
+        "upstream": "skills/mlops/inference/serving-llms-vllm"
+      },
+      {
+        "skill": "note-taking/obsidian",
+        "upstream": "skills/note-taking/obsidian"
+      },
+      {
+        "skill": "productivity/airtable",
+        "upstream": "skills/productivity/airtable"
+      },
+      {
+        "skill": "productivity/box",
+        "upstream": "skills/productivity/box"
+      },
+      {
+        "skill": "productivity/document-to-action-items",
+        "upstream": "skills/productivity/document-to-action-items"
+      },
+      {
+        "skill": "productivity/docx",
+        "upstream": "skills/productivity/docx"
+      },
+      {
+        "skill": "productivity/google-workspace",
+        "upstream": "skills/productivity/google-workspace"
+      },
+      {
+        "skill": "productivity/maps",
+        "upstream": "skills/productivity/maps"
+      },
+      {
+        "skill": "productivity/meeting-action-items",
+        "upstream": "skills/productivity/meeting-action-items"
+      },
+      {
+        "skill": "productivity/nano-pdf",
+        "upstream": "skills/productivity/nano-pdf"
+      },
+      {
+        "skill": "productivity/notion",
+        "upstream": "skills/productivity/notion"
+      },
+      {
+        "skill": "productivity/ocr-and-documents",
+        "upstream": "skills/productivity/ocr-and-documents"
+      },
+      {
+        "skill": "productivity/pdf",
+        "upstream": "skills/productivity/pdf"
+      },
+      {
+        "skill": "productivity/powerpoint",
+        "upstream": "skills/productivity/powerpoint"
+      },
+      {
+        "skill": "productivity/product-price-monitor",
+        "upstream": "skills/productivity/product-price-monitor"
+      },
+      {
+        "skill": "productivity/session-librarian",
+        "upstream": "skills/productivity/session-librarian"
+      },
+      {
+        "skill": "productivity/teams-meeting-pipeline",
+        "upstream": "skills/productivity/teams-meeting-pipeline"
+      },
+      {
+        "skill": "productivity/weekly-review-planning",
+        "upstream": "skills/productivity/weekly-review-planning"
+      },
+      {
+        "skill": "productivity/xlsx",
+        "upstream": "skills/productivity/xlsx"
+      },
+      {
+        "skill": "research/arxiv",
+        "upstream": "skills/research/arxiv"
+      },
+      {
+        "skill": "research/blocked-page-recovery",
+        "upstream": "skills/research/blocked-page-recovery"
+      },
+      {
+        "skill": "research/blogwatcher",
+        "upstream": "skills/research/blogwatcher"
+      },
+      {
+        "skill": "research/competitor-news-monitor",
+        "upstream": "skills/research/competitor-news-monitor"
+      },
+      {
+        "skill": "research/grounded-citations",
+        "upstream": "skills/research/grounded-citations"
+      },
+      {
+        "skill": "research/llm-wiki",
+        "upstream": "skills/research/llm-wiki"
+      },
+      {
+        "skill": "research/research-paper-writing",
+        "upstream": "skills/research/research-paper-writing"
+      },
+      {
+        "skill": "smart-home/openhue",
+        "upstream": "skills/smart-home/openhue"
+      },
+      {
+        "skill": "social-media/xurl",
+        "upstream": "skills/social-media/xurl"
+      },
+      {
+        "skill": "software-development/dogfood",
+        "upstream": "skills/software-development/dogfood"
+      },
+      {
+        "skill": "software-development/hermes-agent-skill-authoring",
+        "upstream": "skills/software-development/hermes-agent-skill-authoring"
+      },
+      {
+        "skill": "software-development/inspecting-hermes-desktop-dom",
+        "upstream": "skills/software-development/inspecting-hermes-desktop-dom"
+      },
+      {
+        "skill": "software-development/node-inspect-debugger",
+        "upstream": "skills/software-development/node-inspect-debugger"
+      },
+      {
+        "skill": "software-development/plan",
+        "upstream": "skills/software-development/plan"
+      },
+      {
+        "skill": "software-development/python-debugpy",
+        "upstream": "skills/software-development/python-debugpy"
+      },
+      {
+        "skill": "software-development/requesting-code-review",
+        "upstream": "skills/software-development/requesting-code-review"
+      },
+      {
+        "skill": "software-development/simplify-code",
+        "upstream": "skills/software-development/simplify-code"
+      },
+      {
+        "skill": "software-development/spike",
+        "upstream": "skills/software-development/spike"
+      },
+      {
+        "skill": "software-development/systematic-debugging",
+        "upstream": "skills/software-development/systematic-debugging"
+      },
+      {
+        "skill": "software-development/test-driven-development",
+        "upstream": "skills/software-development/test-driven-development"
+      }
+    ],
+    "launcher": "A2A_PORT=9912 hermes -p web_designer_agent gateway run --replace  (via ~/.hermes/scripts/start_web_designer_agent.sh)",
+    "adk_app": "/home/moose/python/stark-ai-workbench-adk-backend-v1/web_designer_agent/agent.py",
+    "adk_agent_sha256": "a9248b4c79a162344766316016e15a6f2fd2c8b268ca04ad606ea932d59ae14d"
+  },
+  {
+    "role": "Web Developer",
+    "profile_id": "web_developer_agent",
+    "profile_dir": "~/.hermes/profiles/web_developer_agent",
+    "port": "9913",
+    "model": "gpt-6.1-terra",
+    "provider": "openai-codex",
+    "workspace": "/home/moose/.hermes/profiles/web_developer_agent/workspace",
+    "instruction_entry": [
+      "~/.hermes/profiles/web_developer_agent/SOUL.md",
+      "~/.hermes/profiles/web_developer_agent/workspace/.hermes.md"
+    ],
+    "starter_parts": [
+      "CONSTITUTION/WBM_PLAYBOOK_v1_0.md",
+      "ENGINEER_AGENT/WEB_DEVELOPER_INSTRUCTIONS_v1_0.md",
+      "ENGINEER_AGENT/WEB_DEVELOPER_PLAYBOOK_v1_0.md",
+      "README.md"
+    ],
+    "custom_skills": [
+      "software-development/wbm-engineering"
+    ],
+    "upstream_skills": [
+      {
+        "skill": "apple/apple-notes",
+        "upstream": "skills/apple/apple-notes"
+      },
+      {
+        "skill": "apple/apple-reminders",
+        "upstream": "skills/apple/apple-reminders"
+      },
+      {
+        "skill": "apple/findmy",
+        "upstream": "skills/apple/findmy"
+      },
+      {
+        "skill": "apple/imessage",
+        "upstream": "skills/apple/imessage"
+      },
+      {
+        "skill": "autonomous-ai-agents/claude-code",
+        "upstream": "skills/autonomous-ai-agents/claude-code"
+      },
+      {
+        "skill": "autonomous-ai-agents/codex",
+        "upstream": "skills/autonomous-ai-agents/codex"
+      },
+      {
+        "skill": "autonomous-ai-agents/computer-use",
+        "upstream": "skills/autonomous-ai-agents/computer-use"
+      },
+      {
+        "skill": "autonomous-ai-agents/hermes-agent",
+        "upstream": "skills/autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "skill": "autonomous-ai-agents/merge-reconciler",
+        "upstream": "skills/autonomous-ai-agents/merge-reconciler"
+      },
+      {
+        "skill": "autonomous-ai-agents/opencode",
+        "upstream": "skills/autonomous-ai-agents/opencode"
+      },
+      {
+        "skill": "creative/architecture-diagram",
+        "upstream": "skills/creative/architecture-diagram"
+      },
+      {
+        "skill": "creative/ascii-art",
+        "upstream": "skills/creative/ascii-art"
+      },
+      {
+        "skill": "creative/ascii-video",
+        "upstream": "skills/creative/ascii-video"
+      },
+      {
+        "skill": "creative/baoyu-infographic",
+        "upstream": "skills/creative/baoyu-infographic"
+      },
+      {
+        "skill": "creative/claude-design",
+        "upstream": "skills/creative/claude-design"
+      },
+      {
+        "skill": "creative/comfyui",
+        "upstream": "skills/creative/comfyui"
+      },
+      {
+        "skill": "creative/design-md",
+        "upstream": "skills/creative/design-md"
+      },
+      {
+        "skill": "creative/excalidraw",
+        "upstream": "skills/creative/excalidraw"
+      },
+      {
+        "skill": "creative/humanizer",
+        "upstream": "skills/creative/humanizer"
+      },
+      {
+        "skill": "creative/manim-video",
+        "upstream": "skills/creative/manim-video"
+      },
+      {
+        "skill": "creative/p5js",
+        "upstream": "skills/creative/p5js"
+      },
+      {
+        "skill": "creative/popular-web-designs",
+        "upstream": "skills/creative/popular-web-designs"
+      },
+      {
+        "skill": "creative/pretext",
+        "upstream": "skills/creative/pretext"
+      },
+      {
+        "skill": "creative/sketch",
+        "upstream": "skills/creative/sketch"
+      },
+      {
+        "skill": "creative/songwriting-and-ai-music",
+        "upstream": "skills/creative/songwriting-and-ai-music"
+      },
+      {
+        "skill": "creative/touchdesigner-mcp",
+        "upstream": "skills/creative/touchdesigner-mcp"
+      },
+      {
+        "skill": "devops/sdlc-review",
+        "upstream": "skills/devops/sdlc-review"
+      },
+      {
+        "skill": "email/email-inbox-triage",
+        "upstream": "skills/email/email-inbox-triage"
+      },
+      {
+        "skill": "email/himalaya",
+        "upstream": "skills/email/himalaya"
+      },
+      {
+        "skill": "github/codebase-inspection",
+        "upstream": "skills/github/codebase-inspection"
+      },
+      {
+        "skill": "github/github-auth",
+        "upstream": "skills/github/github-auth"
+      },
+      {
+        "skill": "github/github-code-review",
+        "upstream": "skills/github/github-code-review"
+      },
+      {
+        "skill": "github/github-issue-to-pr",
+        "upstream": "skills/github/github-issue-to-pr"
+      },
+      {
+        "skill": "github/github-issues",
+        "upstream": "skills/github/github-issues"
+      },
+      {
+        "skill": "github/github-pr-workflow",
+        "upstream": "skills/github/github-pr-workflow"
+      },
+      {
+        "skill": "github/github-repo-management",
+        "upstream": "skills/github/github-repo-management"
+      },
+      {
+        "skill": "media/gif-search",
+        "upstream": "skills/media/gif-search"
+      },
+      {
+        "skill": "media/songsee",
+        "upstream": "skills/media/songsee"
+      },
+      {
+        "skill": "media/youtube-content",
+        "upstream": "skills/media/youtube-content"
+      },
+      {
+        "skill": "mlops/evaluation/evaluating-llms-harness",
+        "upstream": "skills/mlops/evaluation/evaluating-llms-harness"
+      },
+      {
+        "skill": "mlops/evaluation/weights-and-biases",
+        "upstream": "skills/mlops/evaluation/weights-and-biases"
+      },
+      {
+        "skill": "mlops/huggingface-hub",
+        "upstream": "skills/mlops/huggingface-hub"
+      },
+      {
+        "skill": "mlops/inference/llama-cpp",
+        "upstream": "skills/mlops/inference/llama-cpp"
+      },
+      {
+        "skill": "mlops/inference/serving-llms-vllm",
+        "upstream": "skills/mlops/inference/serving-llms-vllm"
+      },
+      {
+        "skill": "note-taking/obsidian",
+        "upstream": "skills/note-taking/obsidian"
+      },
+      {
+        "skill": "productivity/airtable",
+        "upstream": "skills/productivity/airtable"
+      },
+      {
+        "skill": "productivity/box",
+        "upstream": "skills/productivity/box"
+      },
+      {
+        "skill": "productivity/document-to-action-items",
+        "upstream": "skills/productivity/document-to-action-items"
+      },
+      {
+        "skill": "productivity/docx",
+        "upstream": "skills/productivity/docx"
+      },
+      {
+        "skill": "productivity/google-workspace",
+        "upstream": "skills/productivity/google-workspace"
+      },
+      {
+        "skill": "productivity/maps",
+        "upstream": "skills/productivity/maps"
+      },
+      {
+        "skill": "productivity/meeting-action-items",
+        "upstream": "skills/productivity/meeting-action-items"
+      },
+      {
+        "skill": "productivity/nano-pdf",
+        "upstream": "skills/productivity/nano-pdf"
+      },
+      {
+        "skill": "productivity/notion",
+        "upstream": "skills/productivity/notion"
+      },
+      {
+        "skill": "productivity/ocr-and-documents",
+        "upstream": "skills/productivity/ocr-and-documents"
+      },
+      {
+        "skill": "productivity/pdf",
+        "upstream": "skills/productivity/pdf"
+      },
+      {
+        "skill": "productivity/powerpoint",
+        "upstream": "skills/productivity/powerpoint"
+      },
+      {
+        "skill": "productivity/product-price-monitor",
+        "upstream": "skills/productivity/product-price-monitor"
+      },
+      {
+        "skill": "productivity/session-librarian",
+        "upstream": "skills/productivity/session-librarian"
+      },
+      {
+        "skill": "productivity/teams-meeting-pipeline",
+        "upstream": "skills/productivity/teams-meeting-pipeline"
+      },
+      {
+        "skill": "productivity/weekly-review-planning",
+        "upstream": "skills/productivity/weekly-review-planning"
+      },
+      {
+        "skill": "productivity/xlsx",
+        "upstream": "skills/productivity/xlsx"
+      },
+      {
+        "skill": "research/arxiv",
+        "upstream": "skills/research/arxiv"
+      },
+      {
+        "skill": "research/blocked-page-recovery",
+        "upstream": "skills/research/blocked-page-recovery"
+      },
+      {
+        "skill": "research/blogwatcher",
+        "upstream": "skills/research/blogwatcher"
+      },
+      {
+        "skill": "research/competitor-news-monitor",
+        "upstream": "skills/research/competitor-news-monitor"
+      },
+      {
+        "skill": "research/grounded-citations",
+        "upstream": "skills/research/grounded-citations"
+      },
+      {
+        "skill": "research/llm-wiki",
+        "upstream": "skills/research/llm-wiki"
+      },
+      {
+        "skill": "research/research-paper-writing",
+        "upstream": "skills/research/research-paper-writing"
+      },
+      {
+        "skill": "smart-home/openhue",
+        "upstream": "skills/smart-home/openhue"
+      },
+      {
+        "skill": "social-media/xurl",
+        "upstream": "skills/social-media/xurl"
+      },
+      {
+        "skill": "software-development/dogfood",
+        "upstream": "skills/software-development/dogfood"
+      },
+      {
+        "skill": "software-development/hermes-agent-skill-authoring",
+        "upstream": "skills/software-development/hermes-agent-skill-authoring"
+      },
+      {
+        "skill": "software-development/inspecting-hermes-desktop-dom",
+        "upstream": "skills/software-development/inspecting-hermes-desktop-dom"
+      },
+      {
+        "skill": "software-development/node-inspect-debugger",
+        "upstream": "skills/software-development/node-inspect-debugger"
+      },
+      {
+        "skill": "software-development/plan",
+        "upstream": "skills/software-development/plan"
+      },
+      {
+        "skill": "software-development/python-debugpy",
+        "upstream": "skills/software-development/python-debugpy"
+      },
+      {
+        "skill": "software-development/requesting-code-review",
+        "upstream": "skills/software-development/requesting-code-review"
+      },
+      {
+        "skill": "software-development/simplify-code",
+        "upstream": "skills/software-development/simplify-code"
+      },
+      {
+        "skill": "software-development/spike",
+        "upstream": "skills/software-development/spike"
+      },
+      {
+        "skill": "software-development/systematic-debugging",
+        "upstream": "skills/software-development/systematic-debugging"
+      },
+      {
+        "skill": "software-development/test-driven-development",
+        "upstream": "skills/software-development/test-driven-development"
+      }
+    ],
+    "launcher": "A2A_PORT=9913 hermes -p web_developer_agent gateway run --replace  (via ~/.hermes/scripts/start_web_developer_agent.sh)",
+    "adk_app": "/home/moose/python/stark-ai-workbench-adk-backend-v1/web_developer_agent/agent.py",
+    "adk_agent_sha256": "06570788bdbad8cf28f9ad2cd14508255fc3acdf7a5beec51b77abc3d6568fed"
+  },
+  {
+    "role": "Web QA Lead",
+    "profile_id": "web_qa_agent",
+    "profile_dir": "~/.hermes/profiles/web_qa_agent",
+    "port": "9914",
+    "model": "gpt-6.1-sol",
+    "provider": "openai-codex",
+    "workspace": "/home/moose/.hermes/profiles/web_qa_agent/workspace",
+    "instruction_entry": [
+      "~/.hermes/profiles/web_qa_agent/SOUL.md",
+      "~/.hermes/profiles/web_qa_agent/workspace/.hermes.md"
+    ],
+    "starter_parts": [
+      "CONSTITUTION/WBM_PLAYBOOK_v1_0.md",
+      "QA_AGENT/WEB_QA_LEAD_INSTRUCTIONS_v1_0.md",
+      "QA_AGENT/WEB_QA_LEAD_PLAYBOOK_v1_0.md",
+      "README.md"
+    ],
+    "custom_skills": [
+      "software-development/web-factory-qa-lead"
+    ],
+    "upstream_skills": [
+      {
+        "skill": "apple/apple-notes",
+        "upstream": "skills/apple/apple-notes"
+      },
+      {
+        "skill": "apple/apple-reminders",
+        "upstream": "skills/apple/apple-reminders"
+      },
+      {
+        "skill": "apple/findmy",
+        "upstream": "skills/apple/findmy"
+      },
+      {
+        "skill": "apple/imessage",
+        "upstream": "skills/apple/imessage"
+      },
+      {
+        "skill": "autonomous-ai-agents/claude-code",
+        "upstream": "skills/autonomous-ai-agents/claude-code"
+      },
+      {
+        "skill": "autonomous-ai-agents/codex",
+        "upstream": "skills/autonomous-ai-agents/codex"
+      },
+      {
+        "skill": "autonomous-ai-agents/computer-use",
+        "upstream": "skills/autonomous-ai-agents/computer-use"
+      },
+      {
+        "skill": "autonomous-ai-agents/hermes-agent",
+        "upstream": "skills/autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "skill": "autonomous-ai-agents/merge-reconciler",
+        "upstream": "skills/autonomous-ai-agents/merge-reconciler"
+      },
+      {
+        "skill": "autonomous-ai-agents/opencode",
+        "upstream": "skills/autonomous-ai-agents/opencode"
+      },
+      {
+        "skill": "creative/architecture-diagram",
+        "upstream": "skills/creative/architecture-diagram"
+      },
+      {
+        "skill": "creative/ascii-art",
+        "upstream": "skills/creative/ascii-art"
+      },
+      {
+        "skill": "creative/ascii-video",
+        "upstream": "skills/creative/ascii-video"
+      },
+      {
+        "skill": "creative/baoyu-infographic",
+        "upstream": "skills/creative/baoyu-infographic"
+      },
+      {
+        "skill": "creative/claude-design",
+        "upstream": "skills/creative/claude-design"
+      },
+      {
+        "skill": "creative/comfyui",
+        "upstream": "skills/creative/comfyui"
+      },
+      {
+        "skill": "creative/design-md",
+        "upstream": "skills/creative/design-md"
+      },
+      {
+        "skill": "creative/excalidraw",
+        "upstream": "skills/creative/excalidraw"
+      },
+      {
+        "skill": "creative/humanizer",
+        "upstream": "skills/creative/humanizer"
+      },
+      {
+        "skill": "creative/manim-video",
+        "upstream": "skills/creative/manim-video"
+      },
+      {
+        "skill": "creative/p5js",
+        "upstream": "skills/creative/p5js"
+      },
+      {
+        "skill": "creative/popular-web-designs",
+        "upstream": "skills/creative/popular-web-designs"
+      },
+      {
+        "skill": "creative/pretext",
+        "upstream": "skills/creative/pretext"
+      },
+      {
+        "skill": "creative/sketch",
+        "upstream": "skills/creative/sketch"
+      },
+      {
+        "skill": "creative/songwriting-and-ai-music",
+        "upstream": "skills/creative/songwriting-and-ai-music"
+      },
+      {
+        "skill": "creative/touchdesigner-mcp",
+        "upstream": "skills/creative/touchdesigner-mcp"
+      },
+      {
+        "skill": "devops/sdlc-review",
+        "upstream": "skills/devops/sdlc-review"
+      },
+      {
+        "skill": "dogfood/adversarial-ux-test",
+        "upstream": "optional-skills/dogfood/adversarial-ux-test"
+      },
+      {
+        "skill": "email/email-inbox-triage",
+        "upstream": "skills/email/email-inbox-triage"
+      },
+      {
+        "skill": "email/himalaya",
+        "upstream": "skills/email/himalaya"
+      },
+      {
+        "skill": "github/codebase-inspection",
+        "upstream": "skills/github/codebase-inspection"
+      },
+      {
+        "skill": "github/github-auth",
+        "upstream": "skills/github/github-auth"
+      },
+      {
+        "skill": "github/github-code-review",
+        "upstream": "skills/github/github-code-review"
+      },
+      {
+        "skill": "github/github-issue-to-pr",
+        "upstream": "skills/github/github-issue-to-pr"
+      },
+      {
+        "skill": "github/github-issues",
+        "upstream": "skills/github/github-issues"
+      },
+      {
+        "skill": "github/github-pr-workflow",
+        "upstream": "skills/github/github-pr-workflow"
+      },
+      {
+        "skill": "github/github-repo-management",
+        "upstream": "skills/github/github-repo-management"
+      },
+      {
+        "skill": "media/gif-search",
+        "upstream": "skills/media/gif-search"
+      },
+      {
+        "skill": "media/songsee",
+        "upstream": "skills/media/songsee"
+      },
+      {
+        "skill": "media/youtube-content",
+        "upstream": "skills/media/youtube-content"
+      },
+      {
+        "skill": "mlops/evaluation/evaluating-llms-harness",
+        "upstream": "skills/mlops/evaluation/evaluating-llms-harness"
+      },
+      {
+        "skill": "mlops/evaluation/weights-and-biases",
+        "upstream": "skills/mlops/evaluation/weights-and-biases"
+      },
+      {
+        "skill": "mlops/huggingface-hub",
+        "upstream": "skills/mlops/huggingface-hub"
+      },
+      {
+        "skill": "mlops/inference/llama-cpp",
+        "upstream": "skills/mlops/inference/llama-cpp"
+      },
+      {
+        "skill": "mlops/inference/serving-llms-vllm",
+        "upstream": "skills/mlops/inference/serving-llms-vllm"
+      },
+      {
+        "skill": "note-taking/obsidian",
+        "upstream": "skills/note-taking/obsidian"
+      },
+      {
+        "skill": "productivity/airtable",
+        "upstream": "skills/productivity/airtable"
+      },
+      {
+        "skill": "productivity/box",
+        "upstream": "skills/productivity/box"
+      },
+      {
+        "skill": "productivity/document-to-action-items",
+        "upstream": "skills/productivity/document-to-action-items"
+      },
+      {
+        "skill": "productivity/docx",
+        "upstream": "skills/productivity/docx"
+      },
+      {
+        "skill": "productivity/google-workspace",
+        "upstream": "skills/productivity/google-workspace"
+      },
+      {
+        "skill": "productivity/maps",
+        "upstream": "skills/productivity/maps"
+      },
+      {
+        "skill": "productivity/meeting-action-items",
+        "upstream": "skills/productivity/meeting-action-items"
+      },
+      {
+        "skill": "productivity/nano-pdf",
+        "upstream": "skills/productivity/nano-pdf"
+      },
+      {
+        "skill": "productivity/notion",
+        "upstream": "skills/productivity/notion"
+      },
+      {
+        "skill": "productivity/ocr-and-documents",
+        "upstream": "skills/productivity/ocr-and-documents"
+      },
+      {
+        "skill": "productivity/pdf",
+        "upstream": "skills/productivity/pdf"
+      },
+      {
+        "skill": "productivity/powerpoint",
+        "upstream": "skills/productivity/powerpoint"
+      },
+      {
+        "skill": "productivity/product-price-monitor",
+        "upstream": "skills/productivity/product-price-monitor"
+      },
+      {
+        "skill": "productivity/session-librarian",
+        "upstream": "skills/productivity/session-librarian"
+      },
+      {
+        "skill": "productivity/teams-meeting-pipeline",
+        "upstream": "skills/productivity/teams-meeting-pipeline"
+      },
+      {
+        "skill": "productivity/weekly-review-planning",
+        "upstream": "skills/productivity/weekly-review-planning"
+      },
+      {
+        "skill": "productivity/xlsx",
+        "upstream": "skills/productivity/xlsx"
+      },
+      {
+        "skill": "research/arxiv",
+        "upstream": "skills/research/arxiv"
+      },
+      {
+        "skill": "research/blocked-page-recovery",
+        "upstream": "skills/research/blocked-page-recovery"
+      },
+      {
+        "skill": "research/blogwatcher",
+        "upstream": "skills/research/blogwatcher"
+      },
+      {
+        "skill": "research/competitor-news-monitor",
+        "upstream": "skills/research/competitor-news-monitor"
+      },
+      {
+        "skill": "research/grounded-citations",
+        "upstream": "skills/research/grounded-citations"
+      },
+      {
+        "skill": "research/llm-wiki",
+        "upstream": "skills/research/llm-wiki"
+      },
+      {
+        "skill": "research/research-paper-writing",
+        "upstream": "skills/research/research-paper-writing"
+      },
+      {
+        "skill": "smart-home/openhue",
+        "upstream": "skills/smart-home/openhue"
+      },
+      {
+        "skill": "social-media/xurl",
+        "upstream": "skills/social-media/xurl"
+      },
+      {
+        "skill": "software-development/dogfood",
+        "upstream": "skills/software-development/dogfood"
+      },
+      {
+        "skill": "software-development/hermes-agent-skill-authoring",
+        "upstream": "skills/software-development/hermes-agent-skill-authoring"
+      },
+      {
+        "skill": "software-development/inspecting-hermes-desktop-dom",
+        "upstream": "skills/software-development/inspecting-hermes-desktop-dom"
+      },
+      {
+        "skill": "software-development/node-inspect-debugger",
+        "upstream": "skills/software-development/node-inspect-debugger"
+      },
+      {
+        "skill": "software-development/plan",
+        "upstream": "skills/software-development/plan"
+      },
+      {
+        "skill": "software-development/python-debugpy",
+        "upstream": "skills/software-development/python-debugpy"
+      },
+      {
+        "skill": "software-development/requesting-code-review",
+        "upstream": "skills/software-development/requesting-code-review"
+      },
+      {
+        "skill": "software-development/simplify-code",
+        "upstream": "skills/software-development/simplify-code"
+      },
+      {
+        "skill": "software-development/spike",
+        "upstream": "skills/software-development/spike"
+      },
+      {
+        "skill": "software-development/systematic-debugging",
+        "upstream": "skills/software-development/systematic-debugging"
+      },
+      {
+        "skill": "software-development/test-driven-development",
+        "upstream": "skills/software-development/test-driven-development"
+      }
+    ],
+    "launcher": "A2A_PORT=9914 hermes -p web_qa_agent gateway run --replace  (via ~/.hermes/scripts/start_web_qa_agent.sh)",
+    "adk_app": "/home/moose/python/stark-ai-workbench-adk-backend-v1/web_qa_agent/agent.py",
+    "adk_agent_sha256": "29ca04652335ad19d593382ac52dbc6e364b62b74e6cb52080b64e9fe259106e"
+  },
+  {
+    "role": "Web DevOps",
+    "profile_id": "web_devops_agent",
+    "profile_dir": "~/.hermes/profiles/web_devops_agent",
+    "port": "9915",
+    "model": "glm-5.3:cloud",
+    "provider": "custom:ollama-launch",
+    "workspace": "/home/moose/.hermes/profiles/web_devops_agent/workspace",
+    "instruction_entry": [
+      "~/.hermes/profiles/web_devops_agent/SOUL.md",
+      "~/.hermes/profiles/web_devops_agent/workspace/.hermes.md"
+    ],
+    "starter_parts": [
+      "CONSTITUTION/WBM_PLAYBOOK_v1_0.md",
+      "DEVOPS_AGENT/WEB_DEVOPS_INSTRUCTIONS_v1_0.md",
+      "DEVOPS_AGENT/WEB_DEVOPS_PLAYBOOK_v1_0.md",
+      "README.md"
+    ],
+    "custom_skills": [
+      "software-development/cloud-deploy-prep"
+    ],
+    "upstream_skills": [
+      {
+        "skill": "apple/apple-notes",
+        "upstream": "skills/apple/apple-notes"
+      },
+      {
+        "skill": "apple/apple-reminders",
+        "upstream": "skills/apple/apple-reminders"
+      },
+      {
+        "skill": "apple/findmy",
+        "upstream": "skills/apple/findmy"
+      },
+      {
+        "skill": "apple/imessage",
+        "upstream": "skills/apple/imessage"
+      },
+      {
+        "skill": "autonomous-ai-agents/claude-code",
+        "upstream": "skills/autonomous-ai-agents/claude-code"
+      },
+      {
+        "skill": "autonomous-ai-agents/codex",
+        "upstream": "skills/autonomous-ai-agents/codex"
+      },
+      {
+        "skill": "autonomous-ai-agents/computer-use",
+        "upstream": "skills/autonomous-ai-agents/computer-use"
+      },
+      {
+        "skill": "autonomous-ai-agents/hermes-agent",
+        "upstream": "skills/autonomous-ai-agents/hermes-agent"
+      },
+      {
+        "skill": "autonomous-ai-agents/merge-reconciler",
+        "upstream": "skills/autonomous-ai-agents/merge-reconciler"
+      },
+      {
+        "skill": "autonomous-ai-agents/opencode",
+        "upstream": "skills/autonomous-ai-agents/opencode"
+      },
+      {
+        "skill": "creative/architecture-diagram",
+        "upstream": "skills/creative/architecture-diagram"
+      },
+      {
+        "skill": "creative/ascii-art",
+        "upstream": "skills/creative/ascii-art"
+      },
+      {
+        "skill": "creative/ascii-video",
+        "upstream": "skills/creative/ascii-video"
+      },
+      {
+        "skill": "creative/baoyu-infographic",
+        "upstream": "skills/creative/baoyu-infographic"
+      },
+      {
+        "skill": "creative/claude-design",
+        "upstream": "skills/creative/claude-design"
+      },
+      {
+        "skill": "creative/comfyui",
+        "upstream": "skills/creative/comfyui"
+      },
+      {
+        "skill": "creative/design-md",
+        "upstream": "skills/creative/design-md"
+      },
+      {
+        "skill": "creative/excalidraw",
+        "upstream": "skills/creative/excalidraw"
+      },
+      {
+        "skill": "creative/humanizer",
+        "upstream": "skills/creative/humanizer"
+      },
+      {
+        "skill": "creative/manim-video",
+        "upstream": "skills/creative/manim-video"
+      },
+      {
+        "skill": "creative/p5js",
+        "upstream": "skills/creative/p5js"
+      },
+      {
+        "skill": "creative/popular-web-designs",
+        "upstream": "skills/creative/popular-web-designs"
+      },
+      {
+        "skill": "creative/pretext",
+        "upstream": "skills/creative/pretext"
+      },
+      {
+        "skill": "creative/sketch",
+        "upstream": "skills/creative/sketch"
+      },
+      {
+        "skill": "creative/songwriting-and-ai-music",
+        "upstream": "skills/creative/songwriting-and-ai-music"
+      },
+      {
+        "skill": "creative/touchdesigner-mcp",
+        "upstream": "skills/creative/touchdesigner-mcp"
+      },
+      {
+        "skill": "devops/sdlc-review",
+        "upstream": "skills/devops/sdlc-review"
+      },
+      {
+        "skill": "email/email-inbox-triage",
+        "upstream": "skills/email/email-inbox-triage"
+      },
+      {
+        "skill": "email/himalaya",
+        "upstream": "skills/email/himalaya"
+      },
+      {
+        "skill": "github/codebase-inspection",
+        "upstream": "skills/github/codebase-inspection"
+      },
+      {
+        "skill": "github/github-auth",
+        "upstream": "skills/github/github-auth"
+      },
+      {
+        "skill": "github/github-code-review",
+        "upstream": "skills/github/github-code-review"
+      },
+      {
+        "skill": "github/github-issue-to-pr",
+        "upstream": "skills/github/github-issue-to-pr"
+      },
+      {
+        "skill": "github/github-issues",
+        "upstream": "skills/github/github-issues"
+      },
+      {
+        "skill": "github/github-pr-workflow",
+        "upstream": "skills/github/github-pr-workflow"
+      },
+      {
+        "skill": "github/github-repo-management",
+        "upstream": "skills/github/github-repo-management"
+      },
+      {
+        "skill": "media/gif-search",
+        "upstream": "skills/media/gif-search"
+      },
+      {
+        "skill": "media/songsee",
+        "upstream": "skills/media/songsee"
+      },
+      {
+        "skill": "media/youtube-content",
+        "upstream": "skills/media/youtube-content"
+      },
+      {
+        "skill": "mlops/evaluation/evaluating-llms-harness",
+        "upstream": "skills/mlops/evaluation/evaluating-llms-harness"
+      },
+      {
+        "skill": "mlops/evaluation/weights-and-biases",
+        "upstream": "skills/mlops/evaluation/weights-and-biases"
+      },
+      {
+        "skill": "mlops/huggingface-hub",
+        "upstream": "skills/mlops/huggingface-hub"
+      },
+      {
+        "skill": "mlops/inference/llama-cpp",
+        "upstream": "skills/mlops/inference/llama-cpp"
+      },
+      {
+        "skill": "mlops/inference/serving-llms-vllm",
+        "upstream": "skills/mlops/inference/serving-llms-vllm"
+      },
+      {
+        "skill": "note-taking/obsidian",
+        "upstream": "skills/note-taking/obsidian"
+      },
+      {
+        "skill": "productivity/airtable",
+        "upstream": "skills/productivity/airtable"
+      },
+      {
+        "skill": "productivity/box",
+        "upstream": "skills/productivity/box"
+      },
+      {
+        "skill": "productivity/document-to-action-items",
+        "upstream": "skills/productivity/document-to-action-items"
+      },
+      {
+        "skill": "productivity/docx",
+        "upstream": "skills/productivity/docx"
+      },
+      {
+        "skill": "productivity/google-workspace",
+        "upstream": "skills/productivity/google-workspace"
+      },
+      {
+        "skill": "productivity/maps",
+        "upstream": "skills/productivity/maps"
+      },
+      {
+        "skill": "productivity/meeting-action-items",
+        "upstream": "skills/productivity/meeting-action-items"
+      },
+      {
+        "skill": "productivity/nano-pdf",
+        "upstream": "skills/productivity/nano-pdf"
+      },
+      {
+        "skill": "productivity/notion",
+        "upstream": "skills/productivity/notion"
+      },
+      {
+        "skill": "productivity/ocr-and-documents",
+        "upstream": "skills/productivity/ocr-and-documents"
+      },
+      {
+        "skill": "productivity/pdf",
+        "upstream": "skills/productivity/pdf"
+      },
+      {
+        "skill": "productivity/powerpoint",
+        "upstream": "skills/productivity/powerpoint"
+      },
+      {
+        "skill": "productivity/product-price-monitor",
+        "upstream": "skills/productivity/product-price-monitor"
+      },
+      {
+        "skill": "productivity/session-librarian",
+        "upstream": "skills/productivity/session-librarian"
+      },
+      {
+        "skill": "productivity/teams-meeting-pipeline",
+        "upstream": "skills/productivity/teams-meeting-pipeline"
+      },
+      {
+        "skill": "productivity/weekly-review-planning",
+        "upstream": "skills/productivity/weekly-review-planning"
+      },
+      {
+        "skill": "productivity/xlsx",
+        "upstream": "skills/productivity/xlsx"
+      },
+      {
+        "skill": "research/arxiv",
+        "upstream": "skills/research/arxiv"
+      },
+      {
+        "skill": "research/blocked-page-recovery",
+        "upstream": "skills/research/blocked-page-recovery"
+      },
+      {
+        "skill": "research/blogwatcher",
+        "upstream": "skills/research/blogwatcher"
+      },
+      {
+        "skill": "research/competitor-news-monitor",
+        "upstream": "skills/research/competitor-news-monitor"
+      },
+      {
+        "skill": "research/grounded-citations",
+        "upstream": "skills/research/grounded-citations"
+      },
+      {
+        "skill": "research/llm-wiki",
+        "upstream": "skills/research/llm-wiki"
+      },
+      {
+        "skill": "research/research-paper-writing",
+        "upstream": "skills/research/research-paper-writing"
+      },
+      {
+        "skill": "smart-home/openhue",
+        "upstream": "skills/smart-home/openhue"
+      },
+      {
+        "skill": "social-media/xurl",
+        "upstream": "skills/social-media/xurl"
+      },
+      {
+        "skill": "software-development/dogfood",
+        "upstream": "skills/software-development/dogfood"
+      },
+      {
+        "skill": "software-development/hermes-agent-skill-authoring",
+        "upstream": "skills/software-development/hermes-agent-skill-authoring"
+      },
+      {
+        "skill": "software-development/inspecting-hermes-desktop-dom",
+        "upstream": "skills/software-development/inspecting-hermes-desktop-dom"
+      },
+      {
+        "skill": "software-development/node-inspect-debugger",
+        "upstream": "skills/software-development/node-inspect-debugger"
+      },
+      {
+        "skill": "software-development/plan",
+        "upstream": "skills/software-development/plan"
+      },
+      {
+        "skill": "software-development/python-debugpy",
+        "upstream": "skills/software-development/python-debugpy"
+      },
+      {
+        "skill": "software-development/requesting-code-review",
+        "upstream": "skills/software-development/requesting-code-review"
+      },
+      {
+        "skill": "software-development/simplify-code",
+        "upstream": "skills/software-development/simplify-code"
+      },
+      {
+        "skill": "software-development/spike",
+        "upstream": "skills/software-development/spike"
+      },
+      {
+        "skill": "software-development/systematic-debugging",
+        "upstream": "skills/software-development/systematic-debugging"
+      },
+      {
+        "skill": "software-development/test-driven-development",
+        "upstream": "skills/software-development/test-driven-development"
+      }
+    ],
+    "launcher": "A2A_PORT=9915 hermes -p web_devops_agent gateway run --replace  (via ~/.hermes/scripts/start_web_devops_agent.sh)",
+    "adk_app": "/home/moose/python/stark-ai-workbench-adk-backend-v1/web_devops_agent/agent.py",
+    "adk_agent_sha256": "0bf94bb2a7cec15695e1fc3225d622314320b9d4001fb45891774fa639ff6fef"
+  }
+]

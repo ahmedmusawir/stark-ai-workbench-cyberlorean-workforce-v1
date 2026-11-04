@@ -1,0 +1,13 @@
+# Never commit live secrets or runtime state. Templates (env.template, config.template.yaml) are fine.
+.env
+.env.*
+!*.template
+auth.json
+*.db
+*.db-*
+sessions/
+memories/
+logs/
+cache/
+__pycache__/
+*.pyc

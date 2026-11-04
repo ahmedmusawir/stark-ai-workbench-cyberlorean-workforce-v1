@@ -1,0 +1,32 @@
+[
+  {
+    "name": "web_architect_agent",
+    "bundle": "v1",
+    "label": "Web Architect"
+  },
+  {
+    "name": "web_designer_agent",
+    "bundle": "v1",
+    "label": "Web Designer"
+  },
+  {
+    "name": "web_developer_agent",
+    "bundle": "v1",
+    "label": "Web Developer"
+  },
+  {
+    "name": "web_qa_agent",
+    "bundle": "v1",
+    "label": "Web QA Lead"
+  },
+  {
+    "name": "web_devops_agent",
+    "bundle": "v1",
+    "label": "Web DevOps"
+  },
+  {
+    "name": "web_designer_contest_agent",
+    "bundle": "v1",
+    "label": "Designer Contest"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "captured_at_local": "2026-11-04T17:32:51+06:00",
+  "captured_at_utc": "2026-11-04T11:32:51+00:00",
+  "host": "Linux 7.0.0-31-generic x86_64",
+  "user": "moose",
+  "home": "/home/moose",
+  "hermes": {
+    "version": "Hermes Agent v0.20.5 (2026.8.19) \u00b7 upstream 58667253 \u00b7 local 4c1f53be (+1 carried commit)",
+    "install_dir": "/home/moose/.hermes/hermes-agent",
+    "install_method": "git",
+    "remote": "https://github.com/NousResearch/hermes-agent.git",
+    "base_commit": "4c1f53be10d0fce1d25aee1975e5149b6c54f25a",
+    "local_patch_files": [
+      "plugins/platforms/a2a/__init__.py",
+      "plugins/platforms/a2a/protocol.py",
+      "plugins/platforms/a2a/security.py",
+      "tests/plugins/test_a2a_plugin.py"
+    ],
+    "python": "Python 3.11.16",
+    "tirith": "tirith 0.4.2"
+  },
+  "adk_backend": {
+    "path": "/home/moose/python/stark-ai-workbench-adk-backend-v1",
+    "remote": "https://github.com/ahmedmusawir/stark-ai-workbench-adk-backend-v1.git",
+    "commit": "6b0f5d34ec65a177f24d165f11abc3067f7e257a",
+    "dirty": [
+      "M web_architect_agent/.adk/session.db",
+      " M web_designer_agent/.adk/session.db",
+      " M web_developer_agent/.adk/session.db",
+      " M web_devops_agent/.adk/session.db",
+      " M web_qa_agent/.adk/session.db",
+      "?? web_designer_contest_agent/"
+    ],
+    "env_names": [
+      "GOOGLE_APPLICATION_CREDENTIALS",
+      "GOOGLE_CLOUD_LOCATION",
+      "GOOGLE_CLOUD_PROJECT",
+      "GOOGLE_CLOUD_REGION",
+      "GOOGLE_GENAI_USE_VERTEXAI",
+      "GOOGLE_STT_BUCKET",
+      "HERMES_A2A_TOKEN"
+    ]
+  },
+  "bob_frontend": {
+    "path": "/home/moose/nextjs/stark-ai-workbench-nextjs-frontend-v1",
+    "remote": "https://github.com/ahmedmusawir/stark-ai-workbench-nextjs-frontend-v1.git",
+    "commit": "466083f2b415d9faeb362eb5e48f6e259a42d840",
+    "dirty_count": 26,
+    "env_names": [
+      "ADK_BUNDLE_URL_V1",
+      "ADK_WRAPPER_URL",
+      "NEXT_PUBLIC_API_BASE_URL",
+      "NEXT_PUBLIC_CHAT_MODE",
+      "NEXT_PUBLIC_SITE_URL",
+      "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+      "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "STRIPE_PRICE_ENTERPRISE",
+      "STRIPE_PRICE_PRO",
+      "STRIPE_PRICE_STARTER",
+      "STRIPE_SECRET_KEY",
+      "STRIPE_WEBHOOK_SECRET",
+      "SUPABASE_SECRET_KEY"
+    ]
+  },
+  "node": "v26.7.0",
+  "ollama": "ollama version is 0.32.5"
+}
